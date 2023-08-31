@@ -1,0 +1,24 @@
+{
+  "name": "devchallenge-backend-network",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "echo \"Starting Node app...\" && sleep 3 && node src/index.js",
+    "start:dev": "nodemon src/index.js",
+    "service:up": "sudo docker-compose up",
+    "service:down": "sudo docker-compose down",
+    "db:up": "sudo docker-compose -f ./docker-compose.db.yml up -d",
+    "db:down": "sudo docker-compose -f ./docker-compose.db.yml down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "pg": "^8.8.0"
+  }
+}
